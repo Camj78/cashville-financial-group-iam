@@ -63,39 +63,29 @@ For offboarding, administrators separately disable sign-in, revoke Entra session
 | Session containment | Entra sign-in sessions revoked | Confirmation and audit log |
 | Auditability | Reviewed modified properties and operation details | Audit screenshots |
 
-## Selected evidence
+## Selected evidence — six key screenshots
 
-**Joiner — identity to application assignment**
+These six screenshots summarize the identity-to-access lifecycle. The [complete 26-image evidence index](EVIDENCE_INDEX.md) provides additional before/after states, configuration details, and audit records.
 
-![Jonathan Jones — Finance identity attributes](screenshots/CFG-Phase2-Joiner-Jonathan-Identity-Attributes.png)
+### Joiner: attribute-based group membership and inherited access
 
-![Jonathan Jones — dynamic Finance group membership](screenshots/CFG-Phase2-Joiner-Jonathan-Dynamic-Group-Membership.png)
+![Jonathan — Finance identity attributes](screenshots/CFG-Phase2-Joiner-Jonathan-Identity-Attributes.png)
 
-![Jonathan Jones — inherited CFG Finance Portal assignment](screenshots/CFG-Phase2-Joiner-Jonathan-Inherited-App-Assignment.png)
+![Jonathan — inherited Finance Portal assignment](screenshots/CFG-Phase2-Joiner-Jonathan-Inherited-App-Assignment.png)
 
-**Dynamic membership and mover workflow**
+### Mover: access follows department changes
 
-![Finance dynamic membership rule](screenshots/CFG-Phase2-Finance-Dynamic-Group-Rule.png)
+![Sarah — final Marketing membership](screenshots/CFG-Phase2-Sarah-Marketing-Membership-Final.png)
 
-![Sarah's Marketing identity attributes](screenshots/CFG-Phase2-Sarah-Marketing-Mover-Attributes.png)
+![Sarah — Finance Portal assignment removed](screenshots/CFG-Phase2-Sarah-Finance-Portal-Assignment-Removed.png)
 
-![Sarah's final Marketing group membership](screenshots/CFG-Phase2-Sarah-Marketing-Membership-Final.png)
+### Leaver: disablement and audit verification
 
-**Group-based enterprise app access**
+![David — account disable audit](screenshots/CFG-Phase2-David-Leaver-Account-Disabled-Audit.png)
 
-![CFG Finance Portal group assignment](screenshots/CFG-Phase2-Finance-Portal-Group-Assignment.png)
+![David — session revocation audit](screenshots/CFG-Phase2-David-Leaver-Sessions-Revoked-Audit.png)
 
-![Sarah's inherited Finance Portal assignment](screenshots/CFG-Phase2-Sarah-Inherited-Finance-Portal-Assignment.png)
-
-![Sarah's Finance Portal assignment removed](screenshots/CFG-Phase2-Sarah-Finance-Portal-Assignment-Removed.png)
-
-**Leaver audit controls**
-
-![David's disabled account](screenshots/CFG-Phase2-David-Leaver-Account-Disabled.png)
-
-![David's account disable audit record](screenshots/CFG-Phase2-David-Leaver-Account-Disabled-Audit.png)
-
-![David's session revocation audit record](screenshots/CFG-Phase2-David-Leaver-Sessions-Revoked-Audit.png)
+**Supporting configuration and troubleshooting:** [Finance dynamic rule](screenshots/CFG-Phase2-Finance-Dynamic-Group-Rule.png) · [Finance Portal group assignment](screenshots/CFG-Phase2-Finance-Portal-Group-Assignment.png) · [Employee-type rule limitation](screenshots/CFG-Phase2-Dynamic-Rule-EmployeeType-Unsupported.png)
 
 ## Engineering lessons
 
